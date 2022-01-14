@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lora:ital@1&family=Montserrat:ital,wght@0,400;0,600;1,600&family=Poppins:ital,wght@0,500;1,500&family=Prompt&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-image: url(images/cloud.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0,.6);
+    background-blend-mode: overlay;
+}
+/* ===============================================================
+                    common css 
+=========================================*/
+.section-title h2{
+    font-size: 40px;
+    border-bottom: 2px solid #c21273 ;
+    margin:  50px 0;
+    display: inline-block;
+    text-transform: uppercase;
+    
+}
+.section-title{
+    text-align: center;
+}
+.continer{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3px;
+}
+.highlight{
+    color: #FF008E;
+}
+.primary-button{
+    outline: 0;
+    border: 0;
+    padding: 15px 20px;
+    background-image: linear-gradient(90deg, #c21273, #FF008E );
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 7px 0 #660a3c;
+    position: relative;
+    top: 0;
+
+}
+.primary-button:active{
+    top:5px;
+    box-shadow: 0 2px 0 #660a3c;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.navagatio{
+    display: flex;
+}
+.navagatio li{
+    list-style: none;
+    margin: 20px;
+}
+.navagatio li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 15px 10px;
+}
+.banner{
+    height: calc(100vh - 80px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.banner-left h1{
+    font-size: 45px;
+    color: white;
+}.banner-left p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+.banner-rigt{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.banner-rigt img{
+    width: 100%;
+}
